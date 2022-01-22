@@ -1,0 +1,96 @@
+body { 
+  box-sizing: border-box; 
+}
+
+html, body { 
+  background: url(assets/images/forest.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.top-space {
+  margin-top: 20vh;
+}
+
+.div-align {
+  text-align: center;
+}
+
+.ease-in-animation {
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+#job-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1rem, calc(1rem * 3vw), 2rem);
+}
+
+.paragraph-pre {
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2rem, calc(2rem * 3vw), 3rem);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+#name {
+  font-family: 'Aguafina Script', cursive;
+  font-size: clamp(1rem, calc(1rem * 3vw), 2rem);
+}
+
+/* Carousel CSS */
+
+#carousel-container {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 30vw;
+}
+
+.card-container {
+  position: relative;
+  width: 200%
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.individual-cards {
+  float: left;
+  width: 50%;
+}
+
+@keyframes slider {
+  0% {}
+}
+
