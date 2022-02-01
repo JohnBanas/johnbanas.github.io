@@ -1,5 +1,10 @@
 body { 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  max-width: 37.5rem;
+  margin: 0 auto; 
+  padding: 0 1.25rem;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
 }
 
 html, body { 
@@ -14,21 +19,26 @@ html, body {
   margin-top: 20vh;
 }
 
+.space {
+  margin-top: 5vh;
+}
+
 .div-align {
   text-align: center;
 }
 
 .ease-in-animation {
-  animation: fadeIn linear 7s;
-  -webkit-animation: fadeIn linear 7s;
-  -moz-animation: fadeIn linear 7s;
-  -o-animation: fadeIn linear 7s;
-  -ms-animation: fadeIn linear 7s;
+  animation: fadeIn linear 15s;
+  -webkit-animation: fadeIn linear 15s;
+  -moz-animation: fadeIn linear 15s;
+  -o-animation: fadeIn linear 15s;
+  -ms-animation: fadeIn linear 15s;
 }
 
-#job-title {
+.job-title {
   font-family: 'DM Serif Display', serif;
   font-size: clamp(1rem, calc(1rem * 3vw), 2rem);
+  text-shadow: 1px 1px 2px antiquewhite;
 }
 
 .paragraph-pre {
@@ -64,33 +74,21 @@ html, body {
   100% {opacity:1;}
 }
 
-#name {
+.name {
   font-family: 'Aguafina Script', cursive;
   font-size: clamp(1rem, calc(1rem * 3vw), 2rem);
+  text-shadow: 1px 1px 2px antiquewhite;
 }
 
-/* Carousel CSS */
-
-#carousel-container {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 30vw;
+.icons {
+  margin: 5vw;
 }
 
-.card-container {
-  position: relative;
-  width: 200%
-  margin: 0;
-  left: 0;
-  animation: 20s slider infinite;
+img:hover {
+  border: 1px solid aliceblue;
+  background-color: aliceblue;
+  border-radius: 15px;
 }
 
-.individual-cards {
-  float: left;
-  width: 50%;
-}
 
-@keyframes slider {
-  0% {}
-}
 
